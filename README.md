@@ -28,11 +28,11 @@ Pada method `main` di class `Driver`, dapat dilihat bahwa battle berlangsung sec
 
 ### 5. Konsep Dodge Attack (Menghindari attack)
 
-Setiap kali lawan melakukan attack, ada 25% probabilitas bahwa attack tersebut missed atau berhasil dihindari. Probabilitas 25% tersebut didapatkan dengan cara mengambil angka random hasil generator LCG, kemudian dimodulo dengan 4 (hasil dari modulo 4 antara 0,1,2, atau 3). Jika bil%4 hasilnya 0, maka attack berhasil dihindari, jika selain 0, maka attack berhasil dilakukan dan health akan berkurang sejumlah attack.
+Setiap kali melakukan attack, ada 25% probabilitas bahwa attack tersebut missed atau berhasil dihindari oleh lawan. Probabilitas 25% tersebut didapatkan dengan cara mengambil angka random hasil generator LCG, kemudian dimodulo dengan 4 (hasil dari modulo 4 antara 0,1,2, atau 3). Jika bil%4 hasilnya 0, maka attack berhasil dihindari, jika selain 0, maka attack berhasil dilakukan dan health akan berkurang sejumlah attack.
 
-### 5. Konsep Spesial Skill
+### 6. Konsep Spesial Skill
 
-Terdapat dua jenis spesialSkill, yaitu regeneration dan double damage. Hero atau Villain dapat menggunakan spesial Skill jika health yang dimiliki di bawah 50 dan belum pernah menggunakan spesial skill sebelumnya. Probabilitas dilakukannya spesial skill adalah 25%, didapatkan dengan angka random bil%4 bernilai 0 untuk mengaktifkan spesial skill dan sisanya attack biasa. Atribut `count` dilihat untuk memastikan bahwa sebelumnya pernah menggunakan spesial skill (`count` bernilai 1) atau tidak (`count` bernilai 0 ). Spesial skill yang didapatkan juga dirandom, yaitu bil%2==0 untuk regenerasi (jika hasilnya 0 maka regenerasi) dan yang lainnya (bil%2==1) untuk double damage, jadi murni 50% masing-masing probabilitasnya. Jika regeneration, tambahkan health dengan 30. Jika double damage, hitung lagi bil%4!=1, jika iya, maka attack tidak berhasil didodge, jika hasilnya bil%4 adalah 1, maka attack berhasil didodge (25% probabilitasnya).
+Terdapat dua jenis spesialSkill, yaitu regeneration dan double damage. Hero atau Villain dapat menggunakan spesial Skill jika health yang dimiliki di bawah 50 dan belum pernah menggunakan spesial skill sebelumnya. Probabilitas dilakukannya spesial skill adalah 25%, didapatkan dengan angka random bil%4 bernilai 0 untuk mengaktifkan spesial skill dan sisanya attack biasa. Atribut `count` dilihat untuk memastikan bahwa sebelumnya pernah menggunakan spesial skill (`count` bernilai 1) atau tidak (`count` bernilai 0 ). Spesial skill yang didapatkan juga dirandom, yaitu bil%2==0 untuk regenerasi (jika hasilnya 0 maka regenerasi) dan yang lainnya (bil%2==1) untuk double damage, jadi murni 50% masing-masing probabilitasnya. Jika regeneration, tambahkan health dengan 30. Jika double damage, atur attack menjadi dua kali lipat (30), hitung lagi bil%4!=1, jika iya, maka attack tidak berhasil didodge, jika hasilnya bil%4 adalah 1, maka attack berhasil didodge (25% probabilitasnya).
 
 ---
 
