@@ -38,11 +38,9 @@ Terdapat dua jenis spesialSkill, yaitu regeneration dan double damage. Hero atau
 
 ## Gambar Hasil Run
 
-(Lampirkan tangkapan layar hasil run di sini untuk memberikan contoh alur permainan)
-
 ![Hasil Run 1](image.png)
 
-Gambar di atas adalah hasil run pertama. Dapat dilihat bahwa battle antara hero dan villain berlangsung sampai salah satunya memiliki health 0 atau di bawah 0. Dapat dilihat bahwa ada damage yang bisa didodge dan ada spesialskill seperti regeneration dan double damage yang hanya bisa dilakukan 1x per hero atau villain.
+Gambar di atas adalah hasil run pertama. Dapat dilihat bahwa battle antara hero dan villain berlangsung sampai salah satunya memiliki health 0 atau di bawah 0. Dapat dilihat bahwa ada attack yang bisa didodge dan ada spesialskill seperti regeneration dan double damage yang hanya bisa dilakukan 1x per hero atau villain.
 
 ![Hasil Run 2](image-1.png)
 
