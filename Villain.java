@@ -33,7 +33,7 @@ public class Villain extends Character implements Behaviour{
 
     public void spesialSkill(Character a, int random){
         System.out.print(getName() + " used special skill, ");
-        if(random%4==0){
+        if(random%2==0){
             System.out.println("Regeneration!!");
             setHealth(getHealth() + 30);
         }

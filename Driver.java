@@ -13,6 +13,7 @@ public class Driver {
             int angkaRandom = randomizer.generateRandomNum();
             if(asad.getHealth()<50){
                 if(angkaRandom%4==0 && asad.getCount()!=1){
+                    angkaRandom = randomizer.generateRandomNum();
                     asad.spesialSkill(zhafran, angkaRandom);
                     asad.setCount(1);
                 }
@@ -35,6 +36,7 @@ public class Driver {
             angkaRandom = randomizer.generateRandomNum();
             if(zhafran.getHealth()<50){
                 if(angkaRandom%4==0 && zhafran.getCount()!=1){
+                    angkaRandom = randomizer.generateRandomNum();
                     zhafran.spesialSkill(asad, angkaRandom);
                     zhafran.setCount(1);
                 }
